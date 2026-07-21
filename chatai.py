@@ -46,9 +46,15 @@ if os.environ.get("GROQ_API_KEY"):
     groq_client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 # Initialisation du client Google Gemini
+# CODE CORRIGÉ (Force l'utilisation de la clé API)
 google_client = None
-if os.environ.get("GEMINI_API_KEY"):
-    google_client = genai.Client()
+
+# On récupère la clé soit depuis les secrets Streamlit, soit depuis l'environnement
+gemini_key = st.secrets.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API_KEY")
+
+if gemini_key:
+    # Passer api_key= ici coupe court à toute tentative d'authentification OAuth cloud
+    google_client = genai.Client(api_key=gemini_key)
 
 
 # ==========================================
