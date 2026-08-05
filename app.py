@@ -49,8 +49,9 @@ if os.environ.get("GROQ_API_KEY"):
 # CODE CORRIGÉ (Force l'utilisation de la clé API)
 google_client = None
 
-# On récupère la clé soit depuis les secrets Streamlit, soit depuis l'environnement
-gemini_key = st.secrets.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API_KEY")
+# On récupère la clé soit depuis les secrets Streamlit, soit depuis l'environnemen
+
+gemini_key = os.environ.get("GEMINI_API_KEY")
 
 if gemini_key:
     # Passer api_key= ici coupe court à toute tentative d'authentification OAuth cloud
