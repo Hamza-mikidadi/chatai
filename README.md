@@ -5,7 +5,7 @@ Bienvenue sur mon projet de Chatbot intelligent ! Cette application permet de ch
 ## 🚀 Tester l'application en direct
 Cliquez sur le lien ci-dessous pour ouvrir et tester l'application directement dans votre navigateur (aucun téléchargement requis) :
 
-👉👉 **[CLIQUEZ ICI POUR TESTER L'APPLICATION EN LIGNE](https://chatai-dkqzoztmsucxhmijbpeeus.streamlit.app/)**
+👉👉 **[CLIQUEZ ICI POUR TESTER L'APPLICATION EN LIGNE](https://chatai-67yb.onrender.com)**
 
 
 ---
