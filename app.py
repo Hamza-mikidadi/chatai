@@ -117,7 +117,7 @@ def ai_response(message_history):
 # 4. AFFICHAGE : HISTORIQUE DU CHAT
 # ==========================================
 st.title(f"💬 ChatAI creer par GOJO avec les model de Groq")
-st.info(f"Please use Mixtral 8x7B. It the only model that get the access!")
+st.info(f"Please use Mixtral 8x7B. It is the only model that I get the access!")
 
 for message in st.session_state[model_selct]:
     # On n'affiche pas visuellement la consigne "system" contenant tout le texte du PDF
